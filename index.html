@@ -1,0 +1,61 @@
+<!-- ✔️ 1. Add home page link in logo. -->
+<!-- ✔️2. Checks the action_btn class and toggl3e_btn class and also the CSS after the comment bcz there is something is missing which is not giving the accurate results for the page and also the black(#000) is not working in the website so also check that. But I think this issue will be resolved when you resolve the classes issues so good luck with that! -->
+<!-- Create an automatic image slider of total of 5 images from internet -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpuort" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ruda:wght@400;600;700&display=swap" rel="stylesheet> -->
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>JSBT Official Site</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <!-- Logo of img and header name -->
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./Image/jsbt-unofficial-logo.png" alt="JSBT Official Logo" height="10%" width="10%">
+                        JSBT Organization</a>
+                </div>
+                <!-- Four pages of website -->
+                <ul class="links">
+                    <li><a href="about-us">About US</a></li>
+                    <li><a href="our-work">Our Work</a></li>
+                    <li><a href="contact">Campaigns</a></li>
+                    <li><a href="media-coverage">Media Coverage</a></li>
+                </ul>
+                <!-- Action btn or responsive bar -->
+                <a href="#" class="action_btn">Contact US</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <!-- Dropdown Menu of Responsive navbar -->
+            <div class="dropdown_menu">
+                <li><a href="about-us">About US</a></li>
+                <li><a href="our-work">Our Work</a></li>
+                <li><a href="contact">Campaigns</a></li>
+                <li><a href="media-coverage">Media Coverage</a></li>
+                <li><a href="#" class="action_btn">Contact US</a></li>
+            </div>
+        </nav>
+    </header>
+    <script src="./script.js"></script>
+</body>
+
+</html>
