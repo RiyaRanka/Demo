@@ -1,8 +1,4 @@
-// Day 1 (23/01): Made the html file and done some CSS work done 
-// Day 2(24/01): Complete the Header section and come to the slider section of images from online and IG
-// Day 2(24/01): Completed the Responsive navbar
-// Day 3(25/01): Create a automatic image slider or casarol + Write the content below the image any random content or lorum ipsum and then work on the number transition.
-
+//Responsive Menu
 const toggleBtn = document.querySelector('.toggle_btn')
 const toggleBtnIcon = document.querySelector('.toggle_btn i')
 const dropDownMenu = document.querySelector('.dropdown_menu')
