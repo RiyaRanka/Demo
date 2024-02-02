@@ -4,7 +4,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* removes the list dot from the website */
 li {
     list-style: none;
 }
@@ -13,10 +12,8 @@ a {
     text-decoration: none;
     color: #0e0e0f;
     font-size: 1.2rem;
-    /* font-weight: bold; */
 }
 
-/* when a mouse goes there the the text turn into black colour  */
 a:hover {
     scale: 1.05;
     color: #000;
@@ -43,10 +40,10 @@ header {
     font-weight: bolder;
 }
 
-/* Check the html section about toggle_btn because the results are not coming the same that should be coming from flex */
 .navbar .links {
+    white-space: nowrap;
     display: flex;
-    margin-left: 7%;
+    margin-left: 5%;
     gap: 6rem;
 }
 
@@ -202,8 +199,28 @@ header {
     }
 }
 
-/* Vision box */
+/* About JSSK or Formation of JSSK*/
+.formation {
+    text-align: center;
+    font-weight: 800;
+    width: 75%;
+    margin: 2px 5% 2% 12%;
+    color: #494646;
+    line-height: 2rem;
+    font-size: large;
+    font-style: oblique;
+}
 
+/* Decreasing the amount of text displaying in phone screen */
+@media only screen
+and (min-device-width:300px)
+and (max-device-width: 650px) {
+    .hide-on-phone-screen {
+        display: none;
+    }
+}
+
+/* Vision box */
 .vision {
     padding: 50px 50px 0px 50px;
     margin: auto;
@@ -221,7 +238,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-p {
+.vision-text p {
     color: #777;
     font-size: 14px;
     font-weight: 300;
@@ -262,5 +279,3 @@ and (max-device-width:650px) {
         flex-direction: column;
     }
 }
-
-/* about */
