@@ -8,15 +8,10 @@ li {
     list-style: none;
 }
 
-a {
+.logo a, .links a, .dropdown_menu a {
     text-decoration: none;
     color: #0e0e0f;
     font-size: 1.2rem;
-}
-
-a:hover {
-    scale: 1.05;
-    color: #000;
     font-weight: bold;
 }
 
@@ -120,16 +115,6 @@ header {
     margin: auto;
 }
 
-/* Caption text */
-.text {
-    color: #0f0e0e;
-    font-size: 25px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
 
 /* For images */
 .image-container {
@@ -141,10 +126,11 @@ header {
 }
 
 .image-container img {
+    border-radius: 25px;
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 /* The dots/bullets/indicators */
@@ -157,6 +143,12 @@ header {
     display: inline-block;
     transition: 0.6s ease;
     position: relative;
+}
+
+@media only screen and (min-width: 700px) and (max-width:1550px) {
+    .dot {
+        margin-top: 10px;
+    }
 }
 
 /* Button color */
@@ -202,19 +194,17 @@ header {
 /* About JSSK or Formation of JSSK*/
 .formation {
     text-align: center;
-    font-weight: 800;
+    font-weight: 500;
     width: 75%;
     margin: 2px 5% 2% 12%;
-    color: #494646;
+    padding-top: 10px;
     line-height: 2rem;
-    font-size: large;
-    font-style: oblique;
 }
 
 /* Decreasing the amount of text displaying in phone screen */
 @media only screen
-and (min-device-width:300px)
-and (max-device-width: 650px) {
+and (min-device-width:250px)
+and (max-device-width: 500px) {
     .hide-on-phone-screen {
         display: none;
     }
@@ -234,8 +224,8 @@ h1 {
 
 .vision-text {
     color: #dd5858;
-    font-weight: 800;
     margin-bottom: 20px;
+    font-size: clamp(0.2rem, 1vw + 0.2rem, 7rem);
 }
 
 .vision-text p {
@@ -278,4 +268,251 @@ and (max-device-width:650px) {
     .row {
         flex-direction: column;
     }
+}
+
+/* Video Carousel */
+
+.contribution_video_gallery {
+    padding: 20px 40px 40px 50px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 10px;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.video-box iframe {
+    border-radius: 25px;
+    max-width: 100%;
+}
+
+.swiper-navBtn {
+    color: #000;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 20px;
+}
+
+@media only screen 
+and (min-device-width:300px)
+and (max-device-width: 768px) {
+    .swiper-navBtn {
+        display: none;
+    }
+}
+
+/* Sponsor / Volunteer Card */
+
+.sponsor-volunteer {
+    padding: 0px 50px 0px 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.spons-vol {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10%;
+}
+
+.icons {
+    font-size: 6em;
+    color: rgb(49, 111, 219);
+}
+
+.card h2 {
+    padding-bottom: 10px;
+    color: rgb(47, 42, 42);
+}
+
+.card {
+    flex-basis: 40%;
+    background: #f1f1f1;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    min-height: 220px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen 
+and (min-device-width: 300px) 
+and (max-device-width:650px) {
+    .spons-vol {
+        flex-direction: column;
+    }
+    .spons-vol-button button {
+        padding: 15px;
+        font-size: 1.7rem;
+        border-radius: 8px;
+    }
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    margin: 12px;
+    font-weight: 800;
+    color: #fff;
+    background: #4070f4;
+}
+
+/* Media Coverage */
+
+.media-coverage {
+    padding: 30px 20px 40px 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff3f3;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.media-images {
+    flex-basis: 5%;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+}
+
+.media-images img {
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+}
+
+@media only screen 
+and (min-device-width: 300px) 
+and (max-device-width:650px) {
+    .media-images img{
+        flex-direction: column;
+        width: 440px;
+    }
+}
+
+/* Achievements & Credentials */
+
+.achievements_credentials {
+    padding: 0px 40px 40px 50px;
+}
+
+.achievements_credentials h1 {
+    text-align: center;
+}
+
+.achievements-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievements-slide-container {
+    width: 50rem;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.achievements-card {
+    border-radius: 8px;
+}
+
+.achievements-card .image-box {
+    height: 500px;
+}
+
+.achievements-card .image-box  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+} 
+
+.achievements-card .credentials-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    padding-bottom: 5%;
+    height: 100%;
+    justify-content: space-between;
+    background: rgba(143, 143, 143, 0.272);
+    border-radius: 0 0 12px 12px;
+}
+
+.credentials-header p {
+    font-size: 20px;
+    font-weight: 450;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .social-icon, 
+.footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.footer .social-icon li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.footer .social-icon li a:hover {
+    transform: translateY(-10px)
+}
+
+.footer .menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer .footer-text-copyright {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
