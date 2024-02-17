@@ -1,7 +1,6 @@
 // AOS Initialization
 AOS.init();
 
-// Automatic Slider
 const toggleBtn = document.querySelector('.toggle_btn')
 const toggleBtnIcon = document.querySelector('.toggle_btn i')
 const dropDownMenu = document.querySelector('.dropdown_menu')
@@ -60,7 +59,7 @@ var swiper = new Swiper(".card_slider", {
     },
     1200: {
       slidesPerView: 4,
-    },
+    }
   }
 });
 
@@ -72,9 +71,9 @@ var swiper = new Swiper(".achievements-slide-container", {
   centerSlide: "true",
   grabCursor: "true",
   fade: "true",
-  speed: 2000,
+  speed: 1000,
   autoplay: {
-    delay: 5000,
-  },
+    delay: 2000,
+  }
 });
 
